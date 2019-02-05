@@ -14,7 +14,7 @@ class TestRPN(unittest.TestCase):
                 '/', 3, 'log10', '*', 4.3, '*', '-', 3.141592653589793, '+']
     _result = -129.822479623173
 
-    _rpn = RPN()
+    _rpn = RPN("")
 
     def test_convert(self):
         self.assertEqual(self._postfix, self._rpn.convert(self._infix))
