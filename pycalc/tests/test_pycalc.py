@@ -9,7 +9,7 @@ class TestPyCalc(unittest.TestCase):
     Unit tests of the whole program.
     """
 
-    _rpn = RPN()
+    _rpn = RPN("")
 
     def test1(self):
         self.assertEqual(1.0, self._rpn.calculate(self._rpn.convert('sin(pi/2)')))
