@@ -27,6 +27,9 @@ class TestRPN(unittest.TestCase):
 
     def test_convert_unknown_function_exception(self):
         self.assertRaises(Exception, self._rpn.convert, self._infix + '*wrong(1)')
+        
+    def test_convert_calculate_round(self):
+        self.assertEqual(2.1, self._rpn.calculate(self._rpn.convert('round(2.123, 1)')))
 
 
 if __name__ == "__main__":
