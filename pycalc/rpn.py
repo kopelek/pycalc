@@ -48,7 +48,7 @@ class RPN:
                         multiplication_possible = False
 
                     elif value == ',':  # to support 2-arguments methods like round(1.234, 2)
-                        pass
+                        multiplication_possible = False
 
                     else:
                         raise Exception('unknown function \'%s\'' % value)
