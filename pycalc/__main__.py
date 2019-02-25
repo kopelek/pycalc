@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/bin/python3
 
 # Pure-python command-line calculator implemented based on Reverse Polish Notation (postfix notation).
 
