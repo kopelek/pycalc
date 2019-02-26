@@ -42,8 +42,12 @@ class RPN:
                         if self.__is_constant(value):
                             self.__send_number_to_output(self._operations.get(value))
                         else:
-                            if multiplication_possible and self.__priority(value) < self.__priority('*'):
-                                self.__push_operator_on_stack('*')
+                            if multiplication_possible:
+                                if self.__priority(value) < self.__priority('*'):
+                                    self.__push_operator_on_stack('*')
+                            else:
+                                if value == '-':
+                                    self.__send_number_to_output('0')
                             self.__push_operator_on_stack(value)
                         multiplication_possible = False
 
