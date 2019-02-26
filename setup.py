@@ -11,7 +11,7 @@ setup(
     name='pycalc-kkopel',
     version='0.0.1',
     author='Krzysztof Kopel',
-    author_email="krzysztof_kopel@epam.com",
+    author_email='krzysztof_kopel@epam.com',
     description='Pure Python calculator.',
     long_description=long_description,
     long_description_content_type='text/markdown',
