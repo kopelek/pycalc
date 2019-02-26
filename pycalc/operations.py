@@ -16,7 +16,7 @@ class Operations(object):
 	    Public constructor.
 	
         Args:
-	        custom_modules: List of custom moduest whichs operations definition.
+	        custom_modules: List of custom moduest which custom operations definition.
 	    """
         self.__get_operations_from_module(math)
         if custom_modules:
