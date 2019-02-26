@@ -36,6 +36,7 @@ class Operations(object):
                   '!=': [operator.ne, 3, 2],
                   '>=': [operator.ge, 3, 2],
                   '>': [operator.gt, 3, 2],
+                  '^': [operator.pow, 3, 2],
                   'abs': [operator.abs, 1, 1],
                   'round': [round.__call__, 1, 2]}
 

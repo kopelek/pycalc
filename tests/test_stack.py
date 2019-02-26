@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import unittest
-from stack import Stack
+from pycalc.stack import Stack
 
 
 class TestStack(unittest.TestCase):
