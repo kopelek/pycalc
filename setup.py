@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
   
 setup(
     name='pycalc-kkopel',
-    version='0.0.1',
+    version='0.0.2',
     author='Krzysztof Kopel',
     author_email='krzysztof_kopel@epam.com',
     description='Pure Python calculator.',
