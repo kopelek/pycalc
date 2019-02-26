@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import unittest
-from rpn import RPN
+from pycalc.rpn import RPN
 
 
 class TestRPN(unittest.TestCase):

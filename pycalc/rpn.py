@@ -6,7 +6,7 @@ from tokenize import tokenize, NUMBER, OP, NAME, N_TOKENS, TokenError
 from io import BytesIO
 
 
-class RPN:
+class RPN(object):
     """
     Implementation of Reverse Polish Notation.
     """

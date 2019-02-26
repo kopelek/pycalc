@@ -1,13 +1,17 @@
 import setuptools
+from os import path
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+here = path.abspath(path.dirname(__file__))
+
+# Get the long description from the README file
+with open(path.join(here, 'README.md'), encoding = 'utf-8') as f:
+    long_description = f.read()
 
 setuptools.setup(
     name="pycalc-kkopel",
     version="0.0.1",
     author="Krzysztof Kopel",
-    author_email="kkopel@google.com",
+    author_email="krzysztof_kopel@epam.com",
     description="Pure Python calculator.",
     long_description=long_description,
     long_description_content_type="text/markdown",
