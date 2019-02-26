@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-# Pure-python command-line calculator implemented based on Reverse Polish Notation (postfix notation).
+"""
+Pure-python command-line calculator implemented based on Reverse Polish Notation (postfix notation).
+"""
+
 
 import argparse
 from rpn import RPN
@@ -14,6 +17,23 @@ parser.add_argument('-p', help='display postfix expression', default=False, acti
 
 
 def main():
+    """
+	Entry point for 'pycalc'.
+	
+    Args:
+        expr:   Expression to calculate (mandatory).
+        -m:     Additional modules to use.
+		-p:     Shows postfix expression.
+		--help: Detailed manual.
+	
+    Returns:
+        Exit code:
+	    0 - Success
+	    1 - Brackets not balanced
+	    2 - Unknown module
+	    3 - Other error.
+    """
+
     args = parser.parse_args()
     try:
         converter = RPN(args.modules)
@@ -35,4 +55,5 @@ def main():
             exit(3)
 
 
-main()
+if __name__ == "__main__":
+    main()

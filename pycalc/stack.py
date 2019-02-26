@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-class Stack:
+class Stack(object):
     """
     Implementation of the stack structure.
     """

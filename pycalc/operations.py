@@ -5,13 +5,19 @@ import operator
 import math
 
 
-class Operations:
+class Operations(object):
     """
     Operations with priorities and number of arguments to calculate.
     Supports operations from custom modules which name is provided in constructor.
     """
 
     def __init__(self, custom_modules):
+        """
+	    Public constructor.
+	
+        Args:
+	        custom_modules: List of custom moduest which custom operations definition.
+	    """
         self.__get_operations_from_module(math)
         if custom_modules:
             for module_name in custom_modules:
